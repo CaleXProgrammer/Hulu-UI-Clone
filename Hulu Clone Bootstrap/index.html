@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.css">
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+
+        .contains {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.638), rgba(0, 0, 0, 0.638)), url('./img/original1.jpg');
+            height: 40rem;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+
+        .plan{
+            background-color: rgb(2, 1, 21);
+        }
+
+        .rightForYou{
+            background: linear-gradient(to bottom, rgb(24, 135, 84), rgb(24, 135, 84), rgb(24, 135, 84), rgb(1, 1, 61));
+        }
+
+        .imageBox{
+            /* min-height: 80; */
+            height: 400px;
+        }
+
+        .imageBox:hover{
+            border: 10px solid gray;
+            box-sizing: border-box !important;
+            padding: 0.4em;
+            margin: 0.7em;
+            border-radius: 10px;
+            transition: .3s ease;
+        }
+
+        .click{
+            display: none;
+        }
+
+        .active.click{
+            display: block;
+            transition: .3s;
+        }
+
+        .click h1{
+            font-size: 4em !important;
+        }
+
+        .groupContainer{
+            background-image: url('/img/original1.jpg');
+            height: 35em !important;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tableOfContent{
+            height: 28rem;
+            overflow-y: scroll;
+        }
+
+        .tableOfContent::-webkit-scrollbar{
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contains container-fluid">
+        <nav class="navbar">
+            <div class="container-lg">
+                <div class="nav-brand">
+                    <p class="text-success fw-bold fs-1">hulu</p>
+                </div>
+                <div class="navbar-nav">
+                    <button class="btn bg-secondary text-light">LOG IN</button>
+                </div>
+            </div>
+        </nav>
+        <div class="row justify-content-center h-100 text-center">
+            <div class="col-9 col-md-5 col-xl-3 justify-content-center">
+                <p class="text-success fw-bold">THE DISNEY TRIO BASIC</p>
+                <img src="./img/instagram.svg" class="text-light img-fluid display-6 fw-bold my-3" alt="The Disney Bundle Trio Basic">
+                <p class="h4 text-light">All with ads for $16.99/month</p>
+                <button class="btn btn-success d-block w-100 text-dark fw-bold my-2">GET ALL THREE</button>
+                <a href="" class="text-decoration-underline text-light">Terms apply</a>
+            </div>
+            <div class="col-9 col-md-5 col-xl-3 justify-content-center">
+                <p class="text-success fw-bold">THE DISNEY+, HULU, MAX TRIO BASIC</p>
+                <img src="./img/instagram.svg" class="text-light img-fluid display-6 fw-bold my-3" alt="The Disney Bundle Trio Basic">
+                <p class="h4 text-light">All with ads for $16.99/month</p>
+                <button class="btn btn-success d-block w-100 text-dark fw-bold my-2">GET ALL THREE</button>
+                <a href="" class="text-decoration-underline text-light">Terms apply</a>
+            </div>
+            <p class="text-center text-decoration-underline text-light my-1 my-lg-5 d-none d-md-block fw-bold">SIGN UP FOR HULU ONLY</p>
+        </div>
+    </div>
+    <section class="plan">
+        <div class="container-lg">
+            <div class="row justify-content-around align-items-center justfy-lg-content-between py-4">
+                <div class="col col-2 col-lg-3 text-center">
+                    <img src="./img/youtube.svg" class="img-fluid">
+                </div>
+                <div class="col col-12 col-lg-5 text-center text-lg-start">
+                    <p class="sm text-success">DISNEY BUNDLE DUO BASIC</p>
+                    <p class="h4 text-light my-3 fs-5">Both with ads, for $10.99 / month</p>
+                </div>
+                <div class="col col-12 col-lg-4 justify-content-end align-end text-lg-center text-center">
+                    <button class="btn text-dark bg-success p-3 p-lg-4 fw-bold px-4 px-lg-5">GET THEM BOTH</button>
+                    <p class="fs-5 text-light text-decoration-underline">Terms apply</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rightForYou text-center align-center justify-content-center p-4">
+        <div class="container-lg">
+            <p class="text-light fw-bold fs-3">BUILD THE PLAN THAT IS RIGHT FOR YOU</p>
+            <button class="btn border-2 border-secondary px-5 py-3 text-light">START BUILDING</button>
+        </div>
+    </section>
+    <section class="allPlans my-3">
+        <div class="container-lg">
+            <p class="sm text-success text-center fw-bold">INCLUDED IN ALL PLANS</p>
+            <h1 class="display-5 text-light fw-bold text-center">All The TV You Love</h1>
+            <p class="h5 fw-light text-light text-center w-50 m-auto">Watch full seasons of exclusive streaming series, current-season episodes, hit movies, Hulu Originals, kids shows, and more.</p>
+            <div class="row justify-content-center align-items-center my-4">
+                <div class="col col-10 col-lg-3 col-md-4 col-sm-5 card border-0 bg-transparent">
+                    <img src="./img/Dakar.png" class="img-fluid imageBox rounded" alt="">
+                    <p class="card-title text-light">Past & Current Seasons</p>
+                    <h3 class="card-subtitle h4 text-light">TV Shows</h3>
+                </div>
+                <div class="col col-10 col-lg-3 col-md-4 col-sm-5 card border-0 bg-transparent">
+                    <img src="./img/Abuja.png" class="img-fluid imageBox rounded" alt="">
+                    <p class="card-title text-light">New & Classic</p>
+                    <h3 class="card-subtitle h4 text-light">Movies</h3>
+                </div>
+                <div class="col col-10 col-lg-3 col-md-4 col-sm-5 card border-0 bg-transparent">
+                    <img src="./img/Abidjan.jpg" class="img-fluid imageBox rounded" alt="">
+                    <p class="card-title text-light">Groundbreaking</p>
+                    <h3 class="card-subtitle h4 text-light">Hulu Originals</h3>
+                </div>
+                <div class="col col-10 col-lg-3 col-md-4 col-sm-5 card border-0 bg-transparent">
+                    <img src="./img/dubai.jpg" class="img-fluid imageBox rounded" alt="">
+                    <p class="card-title text-light">Add-on</p>
+                    <p class="sm text-secondary d-block d-lg-none fw-light">Premium network add-ons available for an additional cost
+                    </p>
+                    <h3 class="card-subtitle h4 text-light">Premuim</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tryHulu my-3 text-center">
+        <div class="container-lg">
+            <p class="text-center text-success">TRY HULU (WITH ADS) + LIVE TV FREE FOR 3 DAYS</p>
+            <h1 class="text-light">Live TV Makes It Better</h1>
+            <p class="text-light w-60 m-auto">Get 95+ top channels on Hulu (With Ads) + Live TV with your favorite live sports, news, and events - plus the entire Hulu streaming library. With Unlimited DVR, store Live TV recordings for up to nine months and fast-forward through your DVR content. Includes access to endless entertainment with Disney+ and live sports with ESPN+.</p>
+            <button class="btn btn-success fw-bold text-dark px-4 py-3">START YOUR FREE TRAIL</button>
+            <p class="sm text-secondary fw-light">Hulu (With Ads) + Live TV plan $82.99/mo. after 3-day free trial (if any) unless canceled. Cancel anytime. Regional restrictions, blackouts and Live TV terms apply. Access content from each service separately. Location data required to watch certain content. Offer valid for eligible subscribers only. See details.</p>
+            <a href="" class="text-decoration-underline fw-bold text-light">VIEW CHANNELS IN YOUR AREA</a>
+        </div>
+    </section>
+    <section class="bg-dark text-light py-3 groupContainer my-5">
+        <div class="container-lg">
+            <div class="head row justify-content-start text-start g-2">
+                <h5 class="text-light d-block col col-4 col-md-2 py-2 fw-light text1">Live Sports</h5>
+                <h5 class="text-light d-block col col-4 col-md-2 py-2 fw-light text2">Breaking News</h5>
+                <h5 class="text-light d-block col col-4 col-md-2 py-2 fw-light text3">Biggest Events</h5>
+            </div>
+            <div class="row my-5">
+                <div class="col groupDivs1 click active text-center text-lg-start">
+                    <h1 class="fw-bold text-light text-center text-lg-start">Live Sports</h1>
+                    <p class="sm text-light w-60">Catch your games at home or on the go. Stream live games from <br> major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.</p>
+                    <p class="sm text-secondary fw-light">Live TV plan required. Regional restrictions, blackouts and additional terms apply. See details</p>
+                </div>
+                <div class="col groupDivs2 click">
+                    <h1 class="fw-bold text-light text-center text-lg-start"> Breaking News</h1>
+                    <p class="sm text-light w-60">Catch your games at home or on the go. Stream live games from <br> major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.</p>
+                    <p class="sm text-secondary fw-light">Live TV plan required. Regional restrictions, blackouts and additional terms apply. See details</p>
+                </div>
+                <div class="col groupDivs3 click">
+                    <h1 class="fw-bold text-light text-center text-lg-start">Biggest Events</h1>
+                    <p class="sm text-light w-60">Spectacular, can't-miss moments like the Olympics, <br> Grammys®, Oscars®, Emmys®, and more.</p>
+                    <p class="sm text-secondary fw-light">Live TV plan required. Regional restrictions, blackouts and additional terms apply. See details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="selectPlan my-5">
+        <div class="container-lg text-center">
+            <h1 class="h1 text-center fw-bold text-light">Select Your Plan</h1>
+            <p class="text-center text-light sm fs-4">Nocvb hidden fees, equipment rentals, or installation appointments. <br> Switch plans or cancel anytime.**</p>
+            <select class="text-center justify-content-center align-items-center Hulu bg-light p-3 fw-bold rounded-pill px-4 border-0">
+                <option value="Hulu" class="rounded-pill">
+                    Hulu
+                </option>
+                <option value="Disney Bundle Duo" class="rounded-pill">
+                    Disney Bundle Duo
+                </option>
+                <option value="Disney Bundle Trio" class="rounded-pill">
+                    Disney Bundle Trio
+                </option>
+                <option value="Disney+, Hulu, Max" class="rounded-pill">
+                    Disney+, Hulu, Max
+                </option>
+                <option value="Hulu + Live TV" class="rounded-pill">
+                    Hulu + Live TV
+                </option>
+            </select>
+            <div class="row my-5 text-end justify-content-end justify-content-end align-items-end ">
+                <div class="col col-6 col-sm-4 col-md-3 text-center">
+                    <p class="sm bg-success text-dark text-center rounded-pill p-1 px-0">BEST VALUE</p>
+                    <img src="./img/x_logo.svg" alt="X Logo">
+                    <p class="sm text-light my-3">Duo Basic</p>
+                    <button class="btn bg-light text-dark w-100 fw-bold">$10.99 / MONTH</button>
+                    <p class="sm text-light">SAVE 44%</p>
+                </div>
+                <div class="col col-6 col-sm-4 col-md-3 text-center">
+                    <img src="./img/youtube.svg" alt="X Logo">
+                    <p class="sm text-light my-3">Duo Premium</p>
+                    <button class="btn bg-light text-dark w-100 fw-bold px-2 p-lg-auto">$19.99 / MONTH</button>
+                    <p class="sm text-light">SAVE 42%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tableOfContent">
+        <div class="container">
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-10 col-lg-5">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3">
+                    <p class="text-secondary text-decoration-line-through text-center">$20.97</p>
+                    <p class="text-light text-center">$16.99/mo</p>
+                </div>
+                <div class="col col-3 col-lg-4">
+                    <p class="text-secondary text-decoration-line-through text-center">$20.97</p>
+                    <p class="text-light text-center">$16.99/mo</p>
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center align-items-center">
+                    <p class="text-light text-center">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-2 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light text-center">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+            <hr>
+           <div class="row justify-content-between align-items-center">
+                <div class="col col-11 col-lg-5 text-center justify-content-center">
+                    <p class="text-light">Monthly Price save up to $28.51/mo</p>
+                </div>
+                <div class="col col-3 col-lg-3 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid ps-lg-0 ps-5">
+                </div>
+                <div class="col col-3 col-lg-4 text-center">
+                    <img src="./img/Pricing_Checkmark_green-light.svg" class="img-fluid px-lg-0 pe-5">
+                </div>
+           </div>
+        </div>
+    </section>
+    
+
+
+
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <script>
+        // let container = document.querySelectorAll('.groupDivs');
+        let container1 = document.querySelector('.groupDivs1')
+        let container2 = document.querySelector('.groupDivs2')
+        let container3 = document.querySelector('.groupDivs3')
+        let text1 = document.querySelector('.text1');
+        let text2 = document.querySelector('.text2');
+        let text3 = document.querySelector('.text3');
+        let current = 1;
+        
+        text1.addEventListener('click', () => {
+            container1.classList.add('active')
+            container2.classList.remove('active')
+            container3.classList.remove('active')
+        })
+        text2.addEventListener('click', () => {
+            container2.classList.add('active')
+            container1.classList.remove('active')
+            container3.classList.remove('active')
+        })
+        text3.addEventListener('click', () => {
+            container3.classList.add('active')
+            container2.classList.remove('active')
+            container1.classList.remove('active')
+        })
+    </script>
+</body>
+
+</html>
